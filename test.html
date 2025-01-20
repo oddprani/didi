@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Didi</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <div class="container"> 
+        <div class="front-page">
+            <h1>Tap to Open</h1>
+            <button id="reveal-button">Reveal</button>
+        </div>
+
+        <div class="main-page" style="display: none;">
+            <h1>🎉 HAPPY BIRTHDAY DIDI ! 🎂</h1>
+            <h2>Happy Birthday to my amazing sister! <br> Hope you have the best day ever. Love you tons!</h2>
+            <h3>I hope that you overcome the things that you often dont talk about <br> and i hope things getter better This year wish you a very Happy birthday again 🥳🎈</h3>
+
+            <div class="image-carousel">
+                <img src="1.jpg" alt="Image 1">
+                <img src="2.jpg" alt="Image 2">
+                <img src="3.jpg" alt="Image 3">
+                <img src="4.jpg" alt="Image 4">
+                <img src="5.jpg" alt="Image 5">
+                <img src="6.jpg" alt="Image 6">
+                <img src="1.jpg" alt="Image 1"> 
+            </div>
+
+            <div class="confetti">
+                <div class="confetti-piece"></div>
+                <div class="confetti-piece"></div>
+                <div class="confetti-piece"></div>
+                <div class="confetti-piece"></div>
+                <div class="confetti-piece"></div>
+                <div class="confetti-piece"></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const revealButton = document.getElementById('reveal-button');
+        const frontPage = document.querySelector('.front-page');
+        const mainPage = document.querySelector('.main-page');
+
+        revealButton.addEventListener('click', () => {
+            frontPage.style.display = 'none';
+            mainPage.style.display = 'block';
+        });
+    </script>
+</body>
+</html>
+
